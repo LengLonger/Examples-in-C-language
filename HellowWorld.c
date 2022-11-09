@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
 
@@ -6,7 +7,8 @@ int main(){
 
     printf("First string\n\n");
     printf("Second string string\n\n");
-
+    
+    puts("First commit in NextAfterSecond branch\n\n");
 
 
     printf("------------------------\n");
