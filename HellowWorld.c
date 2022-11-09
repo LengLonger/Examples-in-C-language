@@ -4,6 +4,10 @@ int main(){
 
     printf("Hellow World\n\n");
 
-    print("First string\n");
+    printf("First string\n\n");
+    printf("Second string string\n\n");
 
+
+
+    printf("------------------------\n");
 }
