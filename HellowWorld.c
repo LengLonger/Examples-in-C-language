@@ -9,7 +9,5 @@ int main(){
     printf("Second string string\n\n");
     
     puts("First commit in NextAfterSecond branch\n\n");
-
-
     printf("------------------------\n");
 }
