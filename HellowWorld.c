@@ -7,5 +7,7 @@ int main(){
     printf("First string\n\n");
     printf("Second string\n\n");
     printf("Third string\n\n");
+    printf("Fourth string\n\n");
+    
     printf("------------------------\n");
 }
