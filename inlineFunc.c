@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+//Forward declaration must be added
 extern inline int mul(int a, int b);
 inline int mul(int a, int b) { return(a*b); }
 
