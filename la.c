@@ -18,32 +18,39 @@ int main(int argc, char const *argv[])
 {
 	p = 0;
 	printf("\n please input string:\n");
+	
 	do
 	{
 		ch = getchar();
 		prog[p++] = ch;
 	}while(ch!='#');
+	
 	p = 0;
+	
 	do
-	{	for (n = 0; n < 8; n++)
-	{
+	{	for (n = 0; n < 8; n++){
 		token[n] = NULL;
 	}
 	ch = prog[p++];
+	
 	while(ch == ' ')
 		ch = prog[p++];
+	
 	if (letter(ch))
 	{
 		m = 0;
+		
 		while(letter(ch) || digit(ch))
 		{
 			token[m] = ch;
 			m++;
 			ch = prog[p++];
 		}
+		
 		token[m++] = '\0';
 		p--;
 		syn = 10;
+		
 		for (n = 0; n < 6; n++)
 		{
 			if (strcmp(token, rwtab[n]) == 0)
@@ -53,6 +60,7 @@ int main(int argc, char const *argv[])
 				}	
 		}
 	}
+	
 	else if(digit(ch))
 	{
 		sum = 0;
@@ -64,6 +72,7 @@ int main(int argc, char const *argv[])
 		p--;
 		syn = 11;
 	}
+	
 	else
 		switch(ch)
 	{
